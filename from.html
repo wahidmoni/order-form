@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<link rel="icon" type="text/css" href="v.png">
+	<title>Order form</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitible"  content="IE=edge"> 
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="order form2.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: times new roman;
+}
+
+body{
+	background-color: #1f242d;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.order h2{
+	font-size: 40px;
+	margin-top: 20px;
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.order form{
+	width: 600px;
+	text-align: center;
+	background-color: white;
+	border-radius: 20px;
+	padding: 30px 40px;
+	margin-bottom: 30px;
+}
+
+ form .input-box{
+ 	display: block;
+ 	justify-content: center;
+ 	align-items: center; 
+ 	margin-bottom: 10px;
+ }
+
+.field .item{
+ 	width: 100%;
+ 	background: black;
+ 	color: white;
+ 	outline: none;
+ 	margin-bottom: 20px;
+ 	padding: 13px;
+ 	border-radius: 6px;
+ 	border: none;
+ 	letter-spacing: 2px;
+ 	font-size: 15px;
+ }
+
+.field .item::placeholder{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2spx;
+}
+
+.field .eror-text{
+	font-size: 12px;
+	color: red;
+	margin: -5 0 10px;
+	text-align: left;
+	margin-top:-10px;
+	display: none;
+}
+
+form button{
+	padding: 12px 32px;
+	border: 2px solid black;
+	background-color: #0ef;
+	cursor: pointer;
+	outline: none;
+	margin-top: 10px;
+	border-radius: 6px;
+	font-size: 16px;
+	color: black;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+form button:hover{
+    background-color: orange;
+    transition: .5s;
+}
+
+    </style>
+</head>
+<body>
+	<section class="order">
+		<h2>Order form</h2>
+		<form action="https://formsubmit.co/wahidmoni2200@gmail.com" method="POST">
+			<div class="input-box">
+
+				<div class="input-field field">
+					<div class="eror-text">Full Name can't be blank</div>
+					<input type="text" placeholder="Full name" id="name" class="item" autocomplete="off">
+				</div>
+
+				<div class="input-field field">
+					<div class="eror-text">Address can't be blank</div>
+					<input type="text" placeholder="Your Address" id="address" class="item" autocomplete="off">
+				</div>
+
+				<div class="input-field field">
+					<div class="eror-text">Email can't be blank</div>
+					<input type="email" placeholder="Email" id="email" class="item" autocomplete="off">
+				</div>
+
+				<div class="input-field field">
+					<div class="eror-text">Phone Number can't be blank</div>
+					<input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+				</div>
+
+				<div class="input-field field">
+					<div class="eror-text">Product Name can't be blank</div>
+					<input type="text" placeholder="Product name" id="product name" class="item" autocomplete="off">
+				</div>
+
+				<div class="input-field field">
+					<div class="eror-text">Quantity can't be blank</div>
+					<input type="text" placeholder="Quantity" id="quantity" class="item" autocomplete="off">
+				</div>
+			</div>
+
+			<div class="textarea-field field">
+				<div class="eror-text">Message can't be blank</div>
+				<textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"class="item" autocomplete="off"></textarea>
+			</div>
+				<button type="submit">Send Message</button>
+		</form>
+	</section>
+
+</body>
+</html>
